@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="tranquil.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar sticky-top bg-dark">
+            <ul>
+                <li class="nav-item" style="float:right;">
+                    <a data-toggle="out" data-target="#alertbox1" class="nav-link bg-primary">Log in</a>
+                </li>
+            </ul>
+        </div>
+        <div class="fancy pnl pnl-default">
+            <div class="header lg">Tranquil: Responsive CSS for modern websites!</div>
+            <div class="pnl-content">Playground</div>
+        </div>
+        <div class="col-12">
+            <div class="pnl pnl-default">
+                <div class="header pnl-header lg">
+                    Default
+                </div>
+                <div class="pnl-content"><small>pnl pnl-default</small></div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="pnl pnl-primary">
+                <div class="header pnl-header">
+                    <button class="link" data-toggle="collapse" data-target="#c1">
+                        Collapse Buttons
+                    </button>
+                </div>
+                <div id="c1" class="pnl-content collapse">
+                    <a href="#" class="btn btn-default">Default</a>
+                    <a href="#" class="btn btn-primary">Primary</a>
+                    <a href="#" class="btn btn-secondary">Secondary</a>
+                    <a href="#" class="btn btn-warning">Warning</a>
+                    <a href="#" class="btn btn-danger">Danger</a>
+                    <a href="#" class="btn btn-info">Info</a>
+                    <a href="#" class="btn btn-success">Success</a>
+                    <a href="javascript:" class="btn-action">Action</a>
+                </div>
+            </div>
+        </div>
+        <div id="alertbox1" class="alert">
+            <div class="pnl pnl-primary">
+                <div class="header pnl-header">
+                    Sign In
+                    <a class="alert-dismiss right" data-toggle="out" data-target="#alertbox1">
+                        &times;
+                    </a>
+                </div>
+                <div class="pnl-content">
+                    <form>
+                        <input type="text" name="email" class="form-cl action" placeholder="Email..." />
+                        <input type="password" name="ps" class="form-cl rounded" placeholder="Password..." />
+                        <a data-toggle="out" data-target="#alertbox1" class="btn-action left">Close</a><input class="btn-action right" type="submit" value="Sign-In" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-info" data-toggle="out" data-target="#alertbox1">
+                View Info
+            </button>
+        </div>
+        <script src="tranquil.js"></script>
+    </body>
+</html>
